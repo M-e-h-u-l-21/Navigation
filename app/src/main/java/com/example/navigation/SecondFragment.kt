@@ -1,5 +1,7 @@
 package com.example.navigation
 
+import android.media.AudioManager
+import android.media.MediaPlayer
 import android.os.Bundle
 import android.os.SystemClock
 import android.view.LayoutInflater
@@ -57,6 +59,10 @@ class SecondFragment : Fragment() {
         btnResume.alpha=0F
         textView.alpha=0F
         btnStart.setOnClickListener {
+            val ring=MediaPlayer.create(context,R.raw.lofibirdschird)
+           
+            ring.start()
+            ring.isLooping = true
             textView.animate().alpha(1.0F).translationY(-80F).setDuration(300).start()
 
             btnResume.alpha=0F
@@ -69,6 +75,7 @@ class SecondFragment : Fragment() {
 
 
             btnStop.setOnClickListener {
+                ring.pause()
                 btnStart.text="Restart Meditation"
                 btnStart.animate().alpha(1.0F).translationY(-80F).setDuration(300).start()
                 btnResume.animate().alpha(1.0F).translationY(-80F).setDuration(300).start()
@@ -82,6 +89,8 @@ class SecondFragment : Fragment() {
                 btnStop.animate().alpha(0F).setDuration(300).start()
                 timedifference = timeHere.base - SystemClock.elapsedRealtime()
                 btnResume.setOnClickListener {
+                    ring.start()
+                    ring.isLooping=true
                     icanchor.startAnimation(roundingalone)
                     btnResume.animate().alpha(0F).setDuration(300).start()
                     btnStart.animate().alpha(0F).setDuration(300).start()
