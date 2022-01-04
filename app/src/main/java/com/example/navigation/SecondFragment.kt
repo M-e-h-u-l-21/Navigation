@@ -60,7 +60,7 @@ class SecondFragment : Fragment() {
         textView.alpha=0F
         btnStart.setOnClickListener {
             val ring=MediaPlayer.create(context,R.raw.lofibirdschird)
-           
+
             ring.start()
             ring.isLooping = true
             textView.animate().alpha(1.0F).translationY(-80F).setDuration(300).start()
