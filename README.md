@@ -73,4 +73,6 @@ We're also fortunate to have seniors that guided us through any error/problem th
  ->Phillips Lackner(Youtube Channel)
 
  ->StackOverFlow
+ ## Screenshots
+ ![SS](WhatsApp Image 2022-01-06 at 12.59.22 AM (1).jpeg)
 
