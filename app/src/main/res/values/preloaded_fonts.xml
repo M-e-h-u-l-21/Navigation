@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/allerta_stencil</item>
+        <item>@font/almendra</item>
+        <item>@font/average_sans</item>
+        <item>@font/crimson_text_bold</item>
+        <item>@font/croissant_one</item>
+        <item>@font/inconsolata_bold</item>
+    </array>
+</resources>

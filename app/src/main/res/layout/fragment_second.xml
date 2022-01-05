@@ -16,7 +16,7 @@
         android:layout_marginStart="8dp"
         android:backgroundTint="#4dd0e1"
         android:fontFamily="sans-serif"
-        android:text="Start Meditation"
+        android:text="@string/start_meditation"
 
         android:textColor="#211D44"
         android:textSize="20sp"
@@ -34,7 +34,7 @@
         android:layout_marginStart="8dp"
         android:backgroundTint="#EF9A9A"
         android:fontFamily="sans-serif"
-        android:text="Pause"
+        android:text="@string/pause"
 
         android:textColor="#211D44"
         android:textSize="20sp"
@@ -50,7 +50,7 @@
         android:layout_height="49dp"
         android:backgroundTint="#EF9A9A"
         android:fontFamily="sans-serif"
-        android:text="Resume"
+        android:text="@string/resume"
 
         android:textColor="#211D44"
         android:textSize="20sp"
