@@ -6,8 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
-import com.example.affirmations.adapter.ItemAdapter
-import com.example.affirmations.data.Datasource
+import com.example.navigation.adapter.ItemAdapter
+import com.example.navigation.data.Datasource
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -42,7 +42,7 @@ class thirdFragment : Fragment() {
         val myDataset=Datasource().loadAffirmations()
         val recyclerView:RecyclerView = v.findViewById(R.id.recycler_view)
         recyclerView.adapter= context?.let { ItemAdapter(it, myDataset) }
-        return inflater.inflate(R.layout.fragment_third, container, false)
+       return v
     }
 
     companion object {
