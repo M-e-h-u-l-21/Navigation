@@ -1,10 +1,13 @@
 package com.example.navigation
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.RecyclerView
+import com.example.affirmations.adapter.ItemAdapter
+import com.example.affirmations.data.Datasource
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -34,6 +37,11 @@ class thirdFragment : Fragment() {
         savedInstanceState: Bundle?,
     ): View? {
         // Inflate the layout for this fragment
+        val v:View=inflater.inflate(R.layout.fragment_third,container,false)
+
+        val myDataset=Datasource().loadAffirmations()
+        val recyclerView:RecyclerView = v.findViewById(R.id.recycler_view)
+        recyclerView.adapter= context?.let { ItemAdapter(it, myDataset) }
         return inflater.inflate(R.layout.fragment_third, container, false)
     }
 
