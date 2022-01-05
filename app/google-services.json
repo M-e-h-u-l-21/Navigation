@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "280637442417",
+    "project_id": "zenify-b33fc",
+    "storage_bucket": "zenify-b33fc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:280637442417:android:8241ee6c6bd4d97bdf8ed0",
+        "android_client_info": {
+          "package_name": "com.example.navigation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "280637442417-hopda628tm1ifhfgd0tka8dgchkjo4tg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoTLdUggn4EZWeFmTp0CTaidu_LMxbOJ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "280637442417-hopda628tm1ifhfgd0tka8dgchkjo4tg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
