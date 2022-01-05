@@ -1,10 +1,12 @@
 package com.example.navigation
 
+import android.content.Intent
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import androidx.fragment.app.Fragment
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -33,7 +35,14 @@ class FirstFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View? {
-        // Inflate the layout for this fragment
+        val v:View=inflater.inflate(R.layout.fragment_first,container,false)
+        val btn:Button=v.findViewById(R.id.btnmeditate)
+        btn.setOnClickListener {
+            val inten:Intent=Intent(context,SecondFragment::class.java)
+            startActivity(inten)
+        }
+
+
         return inflater.inflate(R.layout.fragment_first, container, false)
     }
 
