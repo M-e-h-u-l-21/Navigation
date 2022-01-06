@@ -59,7 +59,7 @@ Answer-We're still working on that feature and we'll also be adding a streak cou
 
 ## Lessons Learned
 
-We all learned about different types of features present in android studio and also we cam across some basic terminologies used in Git.
+We all learned about different types of features present in android studio and also we came across some basic terminologies used in Git.
 
 Being a beginner, we all had only the idea of our project but to implement it and create a product out of it was a gigantic task.We used the course provided by Google to learn the basic working of android studio and different applications of features.
 
